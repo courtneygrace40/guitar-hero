@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.10)
+
+# Project Name
+project(GuitarHeroGame)
+
+# Set C++ Standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Add Frameworks
+set(CMAKE_OSX_SYSROOT /Library/Frameworks)
+
+# Add Executable
+add_executable(GuitarHeroGame src/main.cpp src/testingscroll.cpp)
+
+# Link SFML Frameworks
+target_link_libraries(GuitarHeroGame
+    "-framework sfml-system"
+    "-framework sfml-window"
+    "-framework sfml-graphics"
+    "-framework sfml-audio"
+)
