@@ -21,21 +21,23 @@ Another object that I created was the **“Song”** class, which is mostly used
 
 ## Making A User Interface
 
-To make my game a playable user interface, I used the **ncurses** library. This library allows for the manipulation of the terminal and gets user input from the keyboard. I used this library to create multiple windows where different things can happen simultaneously or based on the window that is used. I created a large window to contain the “strings” with smaller windows to contain the “notes”. Then, I used a loop to draw the lines using characters. Because the lines are created with characters, it was easy to animate notes on these strings. I wrote code to replace the characters over and over again at a certain speed to give the illusion that the note was moving.   
+To make my game a playable user interface, I used the **ncurses library**. This library allows for the **manipulation of the terminal** and gets user input from the keyboard. I used this library to create multiple windows where different things can happen simultaneously or based on the window that is used. I created a large window to contain the “strings” with smaller windows to contain the “notes”. Then, I used a loop to draw the lines using characters. Because the lines are created with characters, it was easy to animate notes on these strings. I wrote code to replace the characters over and over again at a certain speed to give the illusion that the note was moving.   
 
 Once I had created the ability to animate the notes, I wrote a function to take in the note key and length and animate it based on that. This is a relatively long function, but it does successfully animate the notes based on the length, key, and speed of the song.   
 
 ## Transforming Animations Into A Game
 
-One of the most crucial aspects of turning this from just a series of animations into a game was having the user interact with the animation. I created a function to track which key the user is pressing. While the user is holding a certain key, the “string” is highlighted. When they release it, the highlight ends. Once I had written this function, the next step to complete user interaction was to get the timing of the user compared with the computer. To do this, I used timestamps and pointers. I got the timestamps from a few different functions, but I changed the value of a variable in main using pointers. Then, I retrieved these values in a separate function also using the pointer. I did this to get values from different threads simultaneously. There would have been no correct spot to do a function call since the animations and the user input are all happening at the same time in different spots.   
+One of the most crucial aspects of turning this from just a series of animations into a game was having the **user interact with the animation**. I created a function to **track which key the user is pressing**. While the user is holding a certain key, the “string” is highlighted. When they release it, the highlight ends. 
+
+Once I had written this function, the next step to complete user interaction was to get the timing of the user compared with the computer. To do this, I used **timestamps and pointers**. I got the timestamps from a few different functions, but I changed the value of a variable in main using pointers. Then, I retrieved these values in a separate function also using the pointer. I did this to get values from different threads simultaneously. There would have been no correct spot to do a function call since the animations and the user input are all happening at the same time in different spots.   
 
 ### Threads Library 
 
-To get the user input functions to interact at the same time as the animation functions, I used the threads library. The threads library allows for concurrency in C++ programming. I created thread objects to use the threads library. These objects take in function calls and function arguments. Then, to make sure that all of the threads stop simultaneously, I used .join() on all of the threads.   
+To get the user input functions to interact at the same time as the animation functions, I used the **threads library**. The threads library allows for concurrency in C++ programming. I created thread objects to use the threads library. These objects take in function calls and function arguments. Then, to make sure that all of the threads stop simultaneously, I used .join() on all of the threads.   
 
 ### SFML Library 
 
-Finally, I used the SFML library to play music as the user plays the game. Since my game is Guitar Hero, the background music is a crucial part of the game. I uploaded two songs as “wav” files that play based on the user’s choice. The songs begin when the user enters the actual gameplay and end once the gameplay is finished. 
+Finally, I used the **SFML library** to play music as the user plays the game. Since my game is Guitar Hero, the background music is a crucial part of the game. I uploaded two songs as “wav” files that play based on the user’s choice. The songs begin when the user enters the actual gameplay and end once the gameplay is finished. 
 
 ### Compilation 
 
