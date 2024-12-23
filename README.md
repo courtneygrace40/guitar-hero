@@ -6,12 +6,12 @@ This is the repository for a Guitar Hero game that can be played on the terminal
 The **“Note”** class has 4 classes that inherit from it: aNote, sNote, dNote, and fNote. 
 
 The “Note” class has the following qualities (listed with their data type):
-1. '''int colorText'''
-2. int colorBack
-3. int length
-4. int column
-5. char key
-6. WINDOW * win noteWin
+1. ```int colorText```
+2. ```int colorBack```
+3. ```int length```
+4. ```int column```
+5. ```char key```
+6. ```WINDOW * win noteWin```
 
 I hardcoded values for the attributes in each of the child classes to simplify the production of notes. 
 
