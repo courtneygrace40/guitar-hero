@@ -1,11 +1,13 @@
 # Guitar Hero
 This is the repository for a Guitar Hero game that can be played on the terminal. My code is included here along with a CMake text file. Unfortunately, the audio files that I used with this game are too big to be uploaded here. 
 
-## The Note Class
+## Classes
 
-The **“Note”** class has 4 classes that inherit from it: **aNote, sNote, dNote, and fNote**. 
+### The Note Class
 
-The “Note” class has the following qualities (listed with their data type):
+The ```Note``` class has 4 classes that inherit from it: **aNote, sNote, dNote, and fNote**. 
+
+The ```Note``` class has the following attributes (listed with their data type):
 1. ```int colorText```
 2. ```int colorBack```
 3. ```int length```
@@ -17,7 +19,16 @@ I hardcoded values for the attributes in each of the child classes to simplify t
 
 ### The Song Class 
 
-Another object that I created was the **“Song”** class, which is mostly used in the song selection process. Attributes of this class include the song’s name, artist, and choice value (an integer that the user would enter).   
+Another object that I created was the ```Song``` class, which is mostly used in the song selection process. 
+
+The ```Song``` class has the following attributes (listed with their data type):
+1. ```int songNum```
+2. ```string songName```
+3. ```string artistName```
+4. ```vector <Note> songNotes```
+5. ```string musicPath```
+6. ```int speed```
+
 
 ## Making A User Interface
 
