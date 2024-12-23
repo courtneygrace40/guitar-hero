@@ -33,7 +33,7 @@ Once I had written this function, the next step to complete user interaction was
 
 ### Threads Library 
 
-To get the user input functions to interact at the same time as the animation functions, I used the **threads library**. The threads library allows for concurrency in C++ programming. I created thread objects to use the threads library. These objects take in function calls and function arguments. Then, to make sure that all of the threads stop simultaneously, I used .join() on all of the threads.   
+To get the user input functions to interact at the same time as the animation functions, I used the **threads library**. The threads library allows for concurrency in C++ programming. I created thread objects to use the threads library. These objects take in function calls and function arguments. Then, to make sure that all of the threads stop simultaneously, I used ```.join()``` on all of the threads.   
 
 ### SFML Library 
 
