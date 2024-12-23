@@ -3,7 +3,7 @@ This is the repository for a Guitar Hero game that can be played on the terminal
 
 ## The Note Class
 
-The **“Note”** class has 4 classes that inherit from it: aNote, sNote, dNote, and fNote. 
+The **“Note”** class has 4 classes that inherit from it: **aNote, sNote, dNote, and fNote**. 
 
 The “Note” class has the following qualities (listed with their data type):
 1. ```int colorText```
@@ -15,7 +15,9 @@ The “Note” class has the following qualities (listed with their data type):
 
 I hardcoded values for the attributes in each of the child classes to simplify the production of notes. 
 
-Another object that I created was the “Song” class, which is mostly used in the song selection process. This stores the value of the song’s name, artist, and choice value (an integer that the user would enter).   
+### The Song Class 
+
+Another object that I created was the **“Song”** class, which is mostly used in the song selection process. Attributes of this class include the song’s name, artist, and choice value (an integer that the user would enter).   
 
 ## Making A User Interface
 
