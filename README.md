@@ -46,6 +46,13 @@ Once I had written this function, the next step to complete user interaction was
 
 To get the user input functions to interact at the same time as the animation functions, I used the **threads library**. The threads library allows for concurrency in C++ programming. I created thread objects to use the threads library. These objects take in function calls and function arguments. Then, to make sure that all of the threads stop simultaneously, I used ```.join()``` on all of the threads.   
 
+```cpp
+thread animationThread1(animationThread, win, notes, timerPoints, threadFinishPtr, scorePtr, currentNotePtr, song.speed);
+thread userInputThread1(userInputThread, windows, win, timerPoints, scorePtr, threadFinishPtr, currentNotePtr);
+thread musicThread(streamMusic, song.musicPath, isPlayingPtr);
+thread songNameThread(songDisplayThread, song);
+```
+
 ### SFML Library 
 
 Finally, I used the **SFML library** to play music as the user plays the game. Since my game is Guitar Hero, the background music is a crucial part of the game. I uploaded two songs as “wav” files that play based on the user’s choice. The songs begin when the user enters the actual gameplay and end once the gameplay is finished. 
