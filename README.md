@@ -41,7 +41,12 @@ Finally, I used the **SFML library** to play music as the user plays the game. S
 
 ### Compilation 
 
-I use the terminal to compile and run my game. I navigate to the correct folder and do the following two commands: “g++ -std=c++11 -I/opt/homebrew/Cellar/sfml/2.6.2/include main.cpp -o main -L/opt/homebrew/Cellar/sfml/2.6.2/lib -lsfml-audio -lsfml-system -lncurses” and “./main”. Once the “./main” is entered, the game begins. 
+I use the terminal to compile and run my game. I navigate to the correct folder and do the following two commands:   
+
+1. “g++ -std=c++11 -I/opt/homebrew/Cellar/sfml/2.6.2/include main.cpp -o main -L/opt/homebrew/Cellar/sfml/2.6.2/lib -lsfml-audio -lsfml-system -lncurses”
+2. “./main”.
+
+Once the “./main” is entered, the game begins. 
 
 ## Visit My C++ Tutorial
 
