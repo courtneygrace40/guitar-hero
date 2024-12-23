@@ -3,10 +3,10 @@ This is the repository for a Guitar Hero game that can be played on the terminal
 
 ## The Note Class
 
-The “Note” class has 4 classes that inherit from it: aNote, sNote, dNote, and fNote. 
+The **“Note”** class has 4 classes that inherit from it: aNote, sNote, dNote, and fNote. 
 
 The “Note” class has the following qualities (listed with their data type):
-1. int colorText
+1. '''int colorText'''
 2. int colorBack
 3. int length
 4. int column
@@ -23,7 +23,7 @@ To make my game a playable user interface, I used the **ncurses** library. This 
 
 Once I had created the ability to animate the notes, I wrote a function to take in the note key and length and animate it based on that. This is a relatively long function, but it does successfully animate the notes based on the length, key, and speed of the song.   
 
-## Concurrency & Finishing The Game
+## Transforming Animations Into A Game
 
 One of the most crucial aspects of turning this from just a series of animations into a game was having the user interact with the animation. I created a function to track which key the user is pressing. While the user is holding a certain key, the “string” is highlighted. When they release it, the highlight ends. Once I had written this function, the next step to complete user interaction was to get the timing of the user compared with the computer. To do this, I used timestamps and pointers. I got the timestamps from a few different functions, but I changed the value of a variable in main using pointers. Then, I retrieved these values in a separate function also using the pointer. I did this to get values from different threads simultaneously. There would have been no correct spot to do a function call since the animations and the user input are all happening at the same time in different spots.   
 
@@ -33,7 +33,10 @@ To get the user input functions to interact at the same time as the animation fu
 
 ### SFML Library 
 
-Finally, I used the SFML library to play music as the user plays the game. Since my game is Guitar Hero, the background music is a crucial part of the game. I uploaded two songs as “wav” files that play based on the user’s choice. The songs begin when the user enters the actual gameplay and end once the gameplay is finished.   
+Finally, I used the SFML library to play music as the user plays the game. Since my game is Guitar Hero, the background music is a crucial part of the game. I uploaded two songs as “wav” files that play based on the user’s choice. The songs begin when the user enters the actual gameplay and end once the gameplay is finished. 
+
+### Compilation 
+
 I use the terminal to compile and run my game. I navigate to the correct folder and do the following two commands: “g++ -std=c++11 -I/opt/homebrew/Cellar/sfml/2.6.2/include main.cpp -o main -L/opt/homebrew/Cellar/sfml/2.6.2/lib -lsfml-audio -lsfml-system -lncurses” and “./main”. Once the “./main” is entered, the game begins. 
 
 ## Visit My C++ Tutorial
