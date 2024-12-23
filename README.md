@@ -57,7 +57,7 @@ thread songNameThread(songDisplayThread, song);
 
 ### SFML Library 
 
-Finally, I used the **SFML library** to play music as the user plays the game. Since my game is Guitar Hero, the background music is a crucial part of the game. I uploaded two songs as “wav” files that play based on the user’s choice. The songs begin when the user enters the actual gameplay and end once the gameplay is finished. 
+I used the **SFML library** to play music as the user plays the game. Since my game is Guitar Hero, the background music is a crucial part of the game. I uploaded two songs as “wav” files that play based on the user’s choice. The songs begin when the user enters the actual gameplay and end once the gameplay is finished. 
 
 ### Compilation 
 
