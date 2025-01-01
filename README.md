@@ -1,7 +1,7 @@
 # Guitar Hero
 This is the repository for a Guitar Hero game that can be played on the terminal. My code is included here along with a CMake text file. Unfortunately, the audio files that I used with this game are too big to be uploaded here. 
 
-
+Visit [this link](Images/)
 
 ## Classes
 
