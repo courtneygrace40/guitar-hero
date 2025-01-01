@@ -1,8 +1,3 @@
-<div style="background-color: #f4f4f4; padding: 20px; text-align: center; border-bottom: 2px solid #ccc;">
-  <h1 style="margin: 0; font-size: 2.5em; color: #333;">Welcome to My Project!</h1>
-  <p style="margin: 0; font-size: 1.2em; color: #555;">A cool project built with love and care</p>
-</div>
-
 # Guitar Hero
 This is the repository for a Guitar Hero game that can be played on the terminal. My code is included here along with a CMake text file. Unfortunately, the audio files that I used with this game are too big to be uploaded here. 
 
