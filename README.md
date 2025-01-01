@@ -1,4 +1,4 @@
-<img src="" alt="Banner" style="width:100%; height:auto;">
+<img src="GuitarHeroBanner.png" alt="Banner" style="width:100%; height:auto;">
 
 
 
