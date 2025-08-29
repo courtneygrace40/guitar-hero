@@ -9,6 +9,8 @@ Visit [this link](images/) to view a collection of images from my project.
 
 ## Download Project
 
+Copy and execute both of these commands in the terminal: 
+
 ```sh
 brew install ncurses sfml
 ```
@@ -16,6 +18,19 @@ brew install ncurses sfml
 ```sh
 git clone https://github.com/courtneygrace40/guitar-hero.git
 ```
+
+### Compilation 
+
+Navigate to the correct folder in the terminal and execute both commands: 
+
+```sh
+g++ -std=c++11 -I/opt/homebrew/Cellar/sfml/2.6.2/include main.cpp -o main -L/opt/homebrew/Cellar/sfml/2.6.2/lib -lsfml-audio -lsfml-system -lncurses
+```
+```sh
+./main
+```
+
+Once the “./main” is entered, the game begins. 
 
 ## Classes
 
@@ -75,18 +90,6 @@ thread songNameThread(songDisplayThread, song);
 
 I used the **SFML library** to play music as the user plays the game. Since my game is Guitar Hero, the background music is a crucial part of the game. I uploaded two songs as “wav” files that play based on the user’s choice. The songs begin when the user enters the actual gameplay and end once the gameplay is finished. 
 
-### Compilation 
-
-I use the terminal to compile and run my game. I navigate to the correct folder and do the following two commands:  
-
-```sh
-g++ -std=c++11 -I/opt/homebrew/Cellar/sfml/2.6.2/include main.cpp -o main -L/opt/homebrew/Cellar/sfml/2.6.2/lib -lsfml-audio -lsfml-system -lncurses
-```
-```sh
-./main
-```
-
-Once the “./main” is entered, the game begins. 
 
 ## Visit My C++ Tutorial
 
