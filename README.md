@@ -13,6 +13,9 @@ Visit [this link](images/) to view a collection of images from my project.
 git clone https://github.com/courtneygrace40/guitar-hero.git
 ```
 
+```sh
+brew install ncurses sfml
+```
 ## Classes
 
 ### The Note Class
