@@ -9,7 +9,9 @@ Visit [this link](images/) to view a collection of images from my project.
 
 ## Download Project
 
-```git clone github.com/courtneygrace40/guitar-hero```
+```sh
+git clone https://github.com/courtneygrace40/guitar-hero.git
+```
 
 ## Classes
 
