@@ -7,6 +7,10 @@ This is the repository for a Guitar Hero game that can be played on the terminal
 
 Visit [this link](images/) to view a collection of images from my project. 
 
+## Download Project
+
+```git clone github.com/courtneygrace40/guitar-hero```
+
 ## Classes
 
 ### The Note Class
